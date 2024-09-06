@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    experimental: {
+      missingSuspenseWithCSRBailout: false, // Disable missing Suspense with CSR bailout warning
+    },
+  };
+  
+  module.exports = nextConfig;
+  
