@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import ParcelPrint from '../../../components/admin/ParcelPrint.js';
 
@@ -21,5 +22,9 @@ export default function PrintParcelPage() {
     return <p className="text-center text-lg font-semibold text-red-600">No parcel data available.</p>;
   }
 
-  return <ParcelPrint parcel={parcelData} />;
+  return (
+    <Suspense fallback={<p className="text-center text-lg font-semibold">Loading...</p>}>
+      <ParcelPrint parcel={parcelData} />
+    </Suspense>
+  );
 }
