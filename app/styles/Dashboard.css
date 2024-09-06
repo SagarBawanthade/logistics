@@ -1,0 +1,23 @@
+.dashicon{
+    width: 500px;
+    height: 550px;
+    align-items: center !important;
+}
+
+.fonth1{
+    font-size:37px;
+    font-family: math;
+    font-weight: bold;
+}
+   
+
+.fontp{
+    font-size: 16px;
+    font-family: "Grenze", serif;
+    color: rgb(17, 17, 12);
+
+}
+
+.bg{
+    background-color: #faeada  !important;
+}
